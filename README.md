@@ -6,7 +6,12 @@ This tool converts Eagle CAD BOM (Bill of Material files) to:
 - a comma separated file (CSV) with the Bill of Materials (partslist) without header information;
 - a comma separated file (CSV) with the Bill of Materials (partslist) without header information but then grouped per part and including totals.
 
-Uses: Python3
+Uses: 
+    Python3
+    
+Tested with Eagle Version:
+    9.6.2
+
 Enjoy!
 
 ---------------------------
