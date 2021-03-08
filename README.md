@@ -38,6 +38,7 @@ Produces:
 
     onlytotals # removes the tab and csv files after generating a .sum.csv file.
 
+## Prerequisites:
 
 Required Python3 libraries:
 
