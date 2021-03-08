@@ -1,0 +1,78 @@
+Partlist
+
+Exported from example.sch at 01-03-2021 15:34
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant:
+
+Part        Value                         Device                          Package                       Library             Sheet
+
+C1          10uF                          CAP_CERAMIC_0805MP              _0805MP                       microbuilder        3
+C2          10uF                          CAP_CERAMIC0603_NO              0603-NO                       microbuilder        1
+C4          100pF                         100PF-0603-50V-5%               0603                          SparkFun-Capacitors 1
+C5          0.1uF                         0.1UF-16V(+-10%)(0402)          0402-CAP                      SparkFun-Capacitors 1
+C7          0.1uF                         0.1UF-0603-25V-(+80/-20%)       0603                          SparkFun-Capacitors 1
+C8          0.1uF                         0.1UF-16V(+-10%)(0402)          0402-CAP                      SparkFun-Capacitors 1
+C9          0.1uF                         0.1UF-16V(+-10%)(0402)          0402-CAP                      SparkFun-Capacitors 1
+C11         15pF                          15PF-50V(+-5%)(0402)            0402-CAP                      samd21-temp         1
+C12         15pF                          15PF-50V(+-5%)(0402)            0402-CAP                      samd21-temp         1
+C13         10uF                          10UF-0805-10V-10%               0805                          SparkFun-Capacitors 2
+C14         10uF                          10UF-0805-10V-10%               0805                          SparkFun-Capacitors 2
+C15         10uF                          10UF-0805-10V-10%               0805                          SparkFun-Capacitors 2
+C16         10uF                          10UF-0805-10V-10%               0805                          SparkFun-Capacitors 2
+C33         1uF                           CAP_CERAMIC0603_NO              0603-NO                       microbuilder        1
+C34         1uF                           CAP_CERAMIC0603_NO              0603-NO                       microbuilder        1
+C35         1uF                           CAP_CERAMIC0603_NO              0603-NO                       microbuilder        1
+HEARTBEAT   RED                           LED0603                         LED-0603                      SparkFun            1
+IC1         ULN2003AD                     ULN2003AD                       SO16                          uln-udn             2
+JP1         JUMPER-SMT_3_1-NC_PASTE_SILK  JUMPER-SMT_3_1-NC_PASTE_SILK    SMT-JUMPER_3_1-NC_PASTE_SILK  SparkFun-Jumpers    1
+JP2         JUMPER-SMT_2_NC_PASTE_NO-SILK JUMPER-SMT_2_NC_PASTE_NO-SILK   SMT-JUMPER_2_NC_PASTE_NO-SILK SparkFun-Jumpers    3
+JP4         CORTEX_DEBUGPTH               CORTEX_DEBUGPTH                 2X5-PTH-1.27MM                samd21-temp         1
+L1          FB - 30Ohm                    INDUCTOR0603                    0603                          SparkFun-Passives   1
+LED1        WS2812B3535                   WS2812B3535                     LED3535                       microbuilder        1
+LED2        WS2812B3535                   WS2812B3535                     LED3535                       microbuilder        1
+POWER_3.3V  GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V  GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V1 GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V2 GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V3 GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V4 GREEN                         LED0603                         LED-0603                      SparkFun            1
+POWER_5.0V5 GREEN                         LED0603                         LED-0603                      SparkFun            1
+PUMP        PHOENIX_PTSM_M2_SMD           PHOENIX_PTSM_M2_SMD             PTSM_M2_SMD                   jk_customs          2
+R1          1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R2          1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R3          1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R4          10K                           10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R5          4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R6          4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R7          330                           RESISTOR_0603_NOOUT             0603-NO                       microbuilder        1
+R8          1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R9          1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R10         1k                            RESISTOR_0603_NOOUT             0603-NO                       microbuilder        1
+R11         1k                            10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R13         4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R14         4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R15         4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R16         4.7K                          4.7KOHM-1/10W-1%(0603)          0603-RES@1                    SparkFun-Resistors  1
+R25         470?                          10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R35         330?                          10KOHM-1/10W-1%(0603)0603       0603-RES                      SparkFun-Resistors  1
+R48         100k                          RESISTOR_0603_NOOUT             0603-NO                       microbuilder        1
+S2          RESET                         SWITCH-MOMENTARY-2SMD-4.6X2.8MM TACTILE_SWITCH_SMD_4.6X2.8MM  samd21-temp         1
+SDP5XX6XX   SDP5XX_6XX                    SDP5XX_6XX                      SDP5XX_6XX                    jk_customs          3
+SJ5         WP                            JUMPER-SMT_2_NO_NO-SILK         SMT-JUMPER_2_NO_NO-SILK       SparkFun-Jumpers    1
+SJ6         WP                            JUMPER-SMT_2_NO_NO-SILK         SMT-JUMPER_2_NO_NO-SILK       SparkFun-Jumpers    1
+TP1         TEST-POINTTP_15TH_THRU        TEST-POINTTP_15TH_THRU          TP_15TH                       SparkFun-Connectors 3
+TP2         TEST-POINTTP_15TH_THRU        TEST-POINTTP_15TH_THRU          TP_15TH                       SparkFun-Connectors 3
+U$1         DLC-L01G-U2                   DLC-L01G-U2                     DLC-L01G-U2                   jk_customs          3
+U$2         DLC-L01G-U2                   DLC-L01G-U2                     DLC-L01G-U2                   jk_customs          3
+U$5         PHOENIX_PTSM_M6_TH            PHOENIX_PTSM_M6_TH              PTSM_M6_THRHOLE               jk_customs          1
+U$8         USB_MICROB                    USB_MICROB                      USB_MICROB_PACKAGE            femtoduino          1
+U$10        PHOENIX_PTSM_M5_TH            PHOENIX_PTSM_M5_TH              PTSM_M5_THRHOLE               jk_customs          1
+U1          MB85RC256VPF-G-JNERE2         FRAM_SOIC8_I2C                  SOIC8_208MIL                  microbuilder        3
+U4          ATSAMD21G-A                   ATSAMD21G-A                     TQFP-48                       samd21-temp         1
+U5          AP2112/MIC5219                VREG_SOT23-5                    SOT23-5                       microbuilder        1
+VALVE_A     PHOENIX_PTSM_M2_SMD           PHOENIX_PTSM_M2_SMD             PTSM_M2_SMD                   jk_customs          2
+VALVE_B     PHOENIX_PTSM_M2_SMD           PHOENIX_PTSM_M2_SMD             PTSM_M2_SMD                   jk_customs          2
+VALVE_C     PHOENIX_PTSM_M2_SMD           PHOENIX_PTSM_M2_SMD             PTSM_M2_SMD                   jk_customs          2
+Y2          32.768kHz                     CRYSTAL3.2X1.5MM                CRYSTAL-SMD-3.2X1.5MM         samd21-temp         1
