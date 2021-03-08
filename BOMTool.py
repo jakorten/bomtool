@@ -141,7 +141,7 @@ def processBOMandExport(_filename):
     print(" Skipped: " + str(empty_lines) + " empty lines.")
 
     csv_helper_pandas = rereadCSV(text_file_csv, bom_header_index)
-    writeFinalCSV(csv_helper_pandas, text_file_csv)
+    writeFinalCSV(csv_helper_pandas, text_file_sum)
 
     print("===============================================================================")
     print("\n Summed items written in following file: \"" + str(text_file_sum) + "\"\n")
