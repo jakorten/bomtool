@@ -25,6 +25,13 @@ except ModuleNotFoundError:
     print("Please install sys (python3 -m pip install pandas)...")
     exit
 
+try:
+    import os
+except ModuleNotFoundError:
+    print("Please install sys (python3 -m pip install os)...")
+    exit
+
+
 ignore_lines = ["Partlist", "Exported", "EAGLE", "Assembly"]
 
 # Converts bom file to tabbed file:
@@ -117,7 +124,7 @@ def writeFinalCSV(csv_helper_pandas, text_file_csv):
     grouped.to_csv(text_file_csv, index = None)
 
 
-def processBOMandExport(_filename):
+def processBOMandExport(_filename, onlyTotals):
 
     text_file_noext = _filename
     text_file_bom = text_file_noext + ".bom" # original file
@@ -133,7 +140,7 @@ def processBOMandExport(_filename):
 
     writeCSV(text_file_tab, text_file_csv)
     print("\n Overview of BOM file contents:")
-    print("===============================================================================")
+    print("===============================================================================\n")
     print(" Bill of Materials : " + str(added_lines) + " parts added.")
     print(" Ignored: " + str(skipped_lines) + " lines.")
     print(" Skipped: " + str(empty_lines) + " empty lines.")
@@ -144,8 +151,20 @@ def processBOMandExport(_filename):
     print("===============================================================================")
     print("\n Summed items written in following file: \"" + str(text_file_sum) + "\"\n")
 
+    if (onlyTotals):
+        print(" Removing temp files (as script was run with 'onlytotals')...\n")
+        # we remove temp files again...
+        if os.path.isfile(text_file_tab):
+            os.remove(text_file_tab)
+        if os.path.isfile(text_file_csv):
+            os.remove(text_file_csv)
 
-if (len(sys.argv) >= 1):
+
+if (len(sys.argv) > 1):
+    onlyTotals = False
+    if (len(sys.argv) > 2):
+        if (sys.argv[2] == "onlytotals"):
+            onlyTotals = True
     if (sys.argv[1].endswith(".bom")):
         _filename = sys.argv[1].rsplit(".", 1)
         #print(_filename)
@@ -153,7 +172,13 @@ if (len(sys.argv) >= 1):
         print("===============================================================================")
         print(" Tool to convert Eagle BOM file to .csv files (normal csv and summed csv) V1.0")
         print(" V" + version_no + ", " + datestr + ", Johan Korten")
+        print()
+        print(" Note: run with 'onlytotals' argument to only get a summary CSV...")
         print("===============================================================================\n")
         print(" About to process BOM file: \"" + str(_filename[0]) + ".bom\"")
         print()
-        processBOMandExport(_filename[0])
+        try:
+            processBOMandExport(_filename[0], onlyTotals)
+            print(" Finished with success...\n")
+        except:
+            print(" Finished with some problems...\n")
