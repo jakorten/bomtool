@@ -33,3 +33,11 @@ Produces:
     example.csv
     example.sum.csv
 
+
+Requires:
+
+    pandas
+    re
+    sys
+
+And will gracefully remind you to install any of these in case they would be missing.
