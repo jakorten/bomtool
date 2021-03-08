@@ -9,3 +9,8 @@ Uses: Python3
 Enjoy!
 
 ---------------------------
+
+[code]
+  python3 BOMTool.py filename.bom
+[/code]
+
