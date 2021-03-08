@@ -39,10 +39,11 @@ Produces:
     onlytotals # removes the tab and csv files after generating a .sum.csv file.
 
 
-Requires:
+Required Python3 libraries:
 
     pandas
     re
     sys
+    os
 
-And will gracefully remind you to install any of these in case they would be missing.
+Note: the script will remind you to install any of these in case they would be missing.
