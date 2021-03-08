@@ -10,5 +10,6 @@ Enjoy!
 
 ---------------------------
 
-  python3 BOMTool.py filename.bom
+Usage:
+    python3 BOMTool.py filename.bom
 
