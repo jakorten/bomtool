@@ -32,6 +32,11 @@ Produces:
     example.tab
     example.csv
     example.sum.csv
+    
+    
+## Arguments:
+
+    onlytotals # removes the tab and csv files after generating a .sum.csv file.
 
 
 Requires:
