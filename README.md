@@ -7,3 +7,5 @@ This tool converts Eagle CAD BOM (Bill of Material files) to:
 
 Uses: Python3
 Enjoy!
+
+---------------------------
