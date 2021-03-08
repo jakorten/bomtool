@@ -25,16 +25,7 @@ except ModuleNotFoundError:
     print("Please install sys (python3 -m pip install pandas)...")
     exit
 
-try:
-    import pathlib
-except ModuleNotFoundError:
-    print("Please install sys (python3 -m pip install pathlib)...")
-    exit
-
-
-
 ignore_lines = ["Partlist", "Exported", "EAGLE", "Assembly"]
-
 
 # Converts bom file to tabbed file:
 # 1. remove lines that are either empty or start with items from  ignore_lines
