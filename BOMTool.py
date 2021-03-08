@@ -32,6 +32,8 @@ ignore_lines = ["Partlist", "Exported", "EAGLE", "Assembly"]
 # 2. save to .tab file
 
 bom_header_index = ""
+version_no = "1.1"
+datestr = "March 2021"
 
 line_counter = 0
 added_lines = 0
@@ -103,7 +105,12 @@ def rereadCSV(text_file_csv, bom_header_index):
 
 def writeFinalCSV(csv_helper_pandas, text_file_csv):
     # for summing up items:
-    grouped = csv_helper_pandas.groupby(['Value', 'Device', 'Package'])['Part'].count().reset_index()
+    try:
+        grouped = csv_helper_pandas.groupby(['Value', 'Device', 'Package'])['Part'].count().reset_index()
+    except:
+        print("\n Whoops: could not find 'Device' information. \n\n Hint: Maybe you exported a partslist file (e.g. from board/.brd) \n instead of a Bill of Materials (BOM) (from schematics/.sch)?\n")
+        print(" Warning: Your .sum.csv now does not include Device information...\n")
+        grouped = csv_helper_pandas.groupby(['Value', 'Package'])['Part'].count().reset_index()
     grouped = grouped.sort_values(by='Part')
 
     # storing this dataframe in a csv file
@@ -145,7 +152,7 @@ if (len(sys.argv) >= 1):
         print()
         print("===============================================================================")
         print(" Tool to convert Eagle BOM file to .csv files (normal csv and summed csv) V1.0")
-        print(" V1.0, March 2021, Johan Korten")
+        print(" V" + version_no + ", " + datestr + ", Johan Korten")
         print("===============================================================================\n")
         print(" About to process BOM file: \"" + str(_filename[0]) + ".bom\"")
         print()
