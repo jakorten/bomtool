@@ -28,6 +28,7 @@ E.g.:
     python3 BOMTool.py example.bom
     
 Produces:
+
     example.tab
     example.csv
     example.sum.csv
